@@ -13,5 +13,5 @@ div.hero ul li a.gamer:hover { background-color: #9774d8; }
 div.hero ul li a.friend { background-color: #4099ff; }
 div.hero ul li a.friend:hover { background-color: #73ccff; }
 
-div.footer { width: 100%; padding: 75px 0px; text-align: right;}
+div.footer { width: 100%; padding: 75px 0px; text-align: right; font-weight: bold; }
 div.footer ul { list-style-type: none; }
