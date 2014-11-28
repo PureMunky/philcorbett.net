@@ -2,4 +2,4 @@ body { text-align: center; background-color: #DDD; }
 
 ul.hero { list-style-type: none; }
 ul.hero li { display: inline; }
-ul.hero li a { height: 300px; width: 300px; background-color: #FFF; }
+ul.hero li a { height: 300px; width: 300px; background-color: #FFF; display: inline-block; }
