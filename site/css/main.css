@@ -1,8 +1,9 @@
-body { text-align: center; background-color: #fcfcfc; }
+body { text-align: center; background-color: #fcfcfc; margin: 0px; padding: 0px; }
 
-ul.hero { list-style-type: none; }
-ul.hero li { display: inline; }
-ul.hero li a { height: 300px; width: 300px; background-color: #fff; display: inline-block; vertical-align: bottom; }
-ul.hero li a.coder { background-color: #4183c4; }
-ul.hero li a.gamer { background-color: #6441a5; }
-ul.hero li a.friend { background-color: #4099ff; }
+div.hero { width: 100%; padding: 75px 0px; }
+div.hero ul { list-style-type: none; }
+div.hero ul li { display: inline; }
+div.hero ul li a { height: 300px; width: 300px; background-color: #fff; display: inline-block; vertical-align: bottom; }
+div.hero ul li a.coder { background-color: #4183c4; }
+div.hero ul li a.gamer { background-color: #6441a5; }
+div.hero ul li a.friend { background-color: #4099ff; }
