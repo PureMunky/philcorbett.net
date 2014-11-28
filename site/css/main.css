@@ -16,3 +16,5 @@ div.hero ul li a.friend:hover { background-color: #73ccff; }
 
 div.footer { width: 100%; padding: 75px 0px; text-align: right; font-weight: bold; background-color: #fff; }
 div.footer ul { list-style-type: none; }
+
+.left { text-align: left; }
