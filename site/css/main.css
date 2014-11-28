@@ -1,8 +1,8 @@
-body { text-align: center; background-color: #fcfcfc; margin: 0px; padding: 0px; font-family: Helvetica, arial, sans-serif;}
+body { text-align: center; background-color: #eee; margin: 0px; padding: 0px; font-family: Helvetica, arial, sans-serif; }
 
 h1 { padding: 45px; }
 
-div.hero { width: 100%; padding: 75px 0px; }
+div.hero { width: 100%; padding: 75px 0px; background-color: #fff; }
 div.hero ul { list-style-type: none; }
 div.hero ul li { display: inline; margin: 0px 15px; }
 div.hero ul li a { height: 300px; width: 300px; background-color: #fff; display: inline-block; vertical-align: bottom; transition: background-color 0.5s ease; border-radius: 150px; }
@@ -13,5 +13,5 @@ div.hero ul li a.gamer:hover { background-color: #9774d8; }
 div.hero ul li a.friend { background-color: #4099ff; }
 div.hero ul li a.friend:hover { background-color: #73ccff; }
 
-div.footer { width: 100%; padding: 75px 0px; text-align: right; font-weight: bold; }
+div.footer { width: 100%; padding: 75px 0px; text-align: right; font-weight: bold; background-color: #fff; }
 div.footer ul { list-style-type: none; }
