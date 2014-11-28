@@ -17,6 +17,6 @@ div.hero ul li a.friend:hover { background-color: #73ccff; }
 div.footer { width: 100%; padding: 75px 0px; text-align: right; font-weight: bold; background-color: #fff; }
 div.footer ul { list-style-type: none; }
 
-p { padding: 0px 50px; width: 100%; }
+p { padding: 0px 50px; }
 
 .left { text-align: left; }
