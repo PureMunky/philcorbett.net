@@ -1,6 +1,7 @@
 body { text-align: center; background-color: #eee; margin: 0px; padding: 0px; font-family: Helvetica, arial, sans-serif; }
 
 h1 { padding: 45px; }
+h3 { padding: 0px 45px; text-align: left; }
 
 div.hero { width: 100%; padding: 75px 0px; background-color: #fff; }
 div.hero ul { list-style-type: none; }
