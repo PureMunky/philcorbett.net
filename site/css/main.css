@@ -9,3 +9,6 @@ div.hero ul li a { height: 300px; width: 300px; background-color: #fff; display:
 div.hero ul li a.coder { background-color: #4183c4; }
 div.hero ul li a.gamer { background-color: #6441a5; }
 div.hero ul li a.friend { background-color: #4099ff; }
+
+div.footer { width: 100%; padding: 75px; text-align: right;}
+div.footer ul { list-style-type: none; }
