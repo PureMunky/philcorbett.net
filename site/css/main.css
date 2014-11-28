@@ -1,5 +1,7 @@
 body { text-align: center; background-color: #fcfcfc; margin: 0px; padding: 0px; }
 
+h1 { padding: 45px; }
+
 div.hero { width: 100%; padding: 75px 0px; }
 div.hero ul { list-style-type: none; }
 div.hero ul li { display: inline; }
