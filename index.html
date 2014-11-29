@@ -1,9 +1,11 @@
-<html>
+<html ng-app="App">
   <head>
     <title>PhilCorbett.net</title>
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app/app.js"></script>    
   </head>
-  <body>
+  <body ng-controller="MainCtrl">
     <h1>I have no idea what I'm doing!</h1>
     
     <div class="hero">
@@ -21,6 +23,13 @@
       </p>
     </div>
     
+    <div class="contentBox">
+      <h3>What am I up to?</h3>
+      <div ng-controller="RssViewCtrl">
+
+      </div>
+    </div>
+
     <div class="contentBox">
       <h3>Contact</h3>
       <p class="left">
