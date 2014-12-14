@@ -1,22 +1,75 @@
-body { text-align: center; background-color: #eee; margin: 0px; padding: 0px; font-family: Helvetica, arial, sans-serif; }
+body {
+  text-align: center;
+  background-color: #eee;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, arial, sans-serif;
+}
 
-h1 { padding: 45px; }
-h3 { padding: 0px 45px; text-align: left; }
+h1 {
+  padding: 45px;
+}
+h3 {
+  padding: 0px 45px;
+  text-align: left;
+}
 
-div.hero { width: 100%; padding: 75px 0px; background-color: #fff; }
-div.hero ul { list-style-type: none; }
-div.hero ul li { display: inline; margin: 0px 15px; }
-div.hero ul li a { height: 300px; width: 300px; background-color: #fff; display: inline-block; vertical-align: bottom; transition: background-color 0.5s ease; border-radius: 150px; }
-div.hero ul li a.coder { background-color: #4183c4;}
-div.hero ul li a.coder:hover { background-color: #74b6f7; }
-div.hero ul li a.gamer { background-color: #6441a5; }
-div.hero ul li a.gamer:hover { background-color: #9774d8; }
-div.hero ul li a.friend { background-color: #4099ff; }
-div.hero ul li a.friend:hover { background-color: #73ccff; }
+div.hero {
+  width: 100%;
+  padding: 75px 0px;
+  background-color: #fff;
+}
+div.hero ul {
+  list-style-type: none;
+}
+div.hero ul li {
+  display: inline;
+  margin: 0px 15px;
+}
+div.hero ul li a {
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: bottom;
+  transition: background-color 0.5s ease;
+  border-radius: 150px;
+}
+div.hero ul li a.coder {
+  background-color: #4183c4;
+}
+div.hero ul li a.coder:hover {
+  background-color: #74b6f7;
+}
+div.hero ul li a.gamer {
+  background-color: #6441a5;
+}
+div.hero ul li a.gamer:hover {
+  background-color: #9774d8;
+}
+div.hero ul li a.friend {
+  background-color: #4099ff;
+}
+div.hero ul li a.friend:hover {
+  background-color: #73ccff;
+}
 
-div.footer { width: 100%; padding: 75px 0px; text-align: right; font-weight: bold; background-color: #fff; }
-div.footer ul { list-style-type: none; }
+div.footer {
+  width: 100%;
+  padding: 75px 0px;
+  background-color: #fff;
+}
+div.footer ul {
+  list-style-type: none;
+}
+div.footer ul li {
+  display: inline;
+}
 
-p { padding: 0px 50px; }
+p {
+  padding: 0px 50px;
+}
 
-.left { text-align: left; }
+.left {
+  text-align: left;
+}
