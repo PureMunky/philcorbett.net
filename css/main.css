@@ -36,8 +36,22 @@ div.hero ul li a {
   background-color: #fff;
   display: inline-block;
   vertical-align: bottom;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
   border-radius: 150px;
+}
+div.hero ul li a div {
+  border-radius: 150px;
+  width: inherit;
+  height: inherit;
+  background-size: 100%;
+  background-position: 0px 0px;
+  opacity: 0.2;
+  transition: 0.3s ease;
+}
+div.hero ul li a:hover div {
+  background-size: 120%;
+  /*background-position: -30px -30px;*/
+  opacity: 0.6;
 }
 div.hero ul li a.coder {
   background-color: #4183c4;
@@ -45,17 +59,26 @@ div.hero ul li a.coder {
 div.hero ul li a.coder:hover {
   background-color: #74b6f7;
 }
+div.hero ul li a.coder div {
+  background-image: url(../images/code.png);
+}
 div.hero ul li a.gamer {
   background-color: #6441a5;
 }
 div.hero ul li a.gamer:hover {
   background-color: #9774d8;
 }
+div.hero ul li a.gamer div {
+  background-image: url(../images/gamer.jpg);
+}
 div.hero ul li a.friend {
   background-color: #4099ff;
 }
 div.hero ul li a.friend:hover {
   background-color: #73ccff;
+}
+div.hero ul li a.friend div {
+  background-image: url(../images/friend.jpg);
 }
 
 div.footer {
