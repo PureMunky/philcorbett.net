@@ -6,9 +6,16 @@ body {
   font-family: Helvetica, arial, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
 h1 {
-  padding: 45px 45px 0px 45px;
+  padding: 45px 45px 20px 45px;
   margin: 0px;
+}
+h2 {
+    margin: 0px auto 15px;
 }
 h3 {
   padding: 0px 45px;
@@ -16,6 +23,15 @@ h3 {
 }
 h4 {
   margin: 10px 0px 20px 0px;
+}
+
+h1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+div.contentBox {
+    background-color: #fff;
 }
 
 div.hero {
@@ -93,7 +109,8 @@ div.footer ul li {
 }
 
 p {
-  padding: 0px 50px;
+  padding: 15px 50px;
+  margin: 0px;
 }
 
 .left {
