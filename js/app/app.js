@@ -1,7 +1,10 @@
 var App = angular.module('App', ['ngRoute']),
-    config = {
-        partialsPath: 'partials/'
-    };
+  config = {
+    partialsPath: 'partials/'
+  },
+  persist = {
+
+  };
 
 App.config(['$routeProvider',
   function($routeProvider) {
@@ -25,16 +28,28 @@ App.config(['$routeProvider',
 ]);
 
 App.controller('MainCtrl', ['$scope', function ($scope) {
-  this.name = 'Main';
+  $scope.name = 'Main';
 }]);
 
 App.controller('CommCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
-  var word = $routeParams.commId;
+  $scope.word = $routeParams.commId;
+  $scope.lastWord = persist.lastWord;
+  persist.lastWord = $scope.word;
 
-  $scope.name = word.substr(0,1).toUpperCase() + word.substr(1).toLowerCase();
-  $scope.description = 'hello';
+  var specialWords = {
+    whatisthis: {
+      name: 'What is this?'
+    }
+  };
+
+  if (specialWords[$scope.word] !== undefined) {
+    $scope.name = specialWords[$scope.word].name;
+  } else {
+    $scope.name = $scope.word.substr(0, 1).toUpperCase() + $scope.word.substr(1).toLowerCase();
+  }
+
 
   $scope.getPage = function () {
-    return config.partialsPath + 'comm/words/' + $scope.name + '.html';
+    return config.partialsPath + 'comm/words/' + $scope.word + '.html';
   };
 }]);
