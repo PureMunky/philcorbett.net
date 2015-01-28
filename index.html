@@ -7,19 +7,22 @@
     <script src="js/app/app.js"></script>
   </head>
   <body ng-controller="MainCtrl">
-    <h1 class="h-card"><a class="p-name u-url" href="http://philcorbett.net" rel="me">Phil Corbett</a></h1>
+    <div class="h-card">
+      <h1><a class="p-name u-url" href="http://philcorbett.net" rel="me">Phil Corbett</a></h1>
+    </div>
 
     <div ng-view></div>
 
     <div class="footer">
       <ul>
-        <li><a ng-href="#/">Home</a></li>
+        <li><a ng-href="#/"><img src="images/profile.jpg" class="u-photo" style="height: 50px; width: 50px;" /></a></li>
         <li><a target="_blank" href="http://www.twitter.com/PureMunky" rel="me">Twitter</a></li>
         <li><a target="_blank" href="http://blog.philcorbett.net" rel="me">Blog</a></li>
         <li><a target="_blank" href="http://www.twitch.tv/puremunky" rel="me">Twitch</a></li>
         <li><a target="_blank" href="http://github.com/PureMunky" rel="me">Github</a></li>
         <li><a target="_blank" href="https://www.facebook.com/corbett.phil" rel="me">Facebook</a></li>
         <li><a target="_blank" href="http://puremunky.tip.me/" rel="me">ChangeTip</a></li>
+        <li><a href="mailto:corbett.phil@gmail.com" class="u-email" rel="me">Email</a></li>
       </ul>
     </div>
 
