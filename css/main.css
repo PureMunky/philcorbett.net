@@ -107,6 +107,10 @@ div.footer ul {
 div.footer ul li {
   display: inline;
 }
+div.footer ul li img {
+    border-radius: 25px;
+    vertical-align: middle;
+}
 
 p {
   padding: 15px 50px;
