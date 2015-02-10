@@ -36,11 +36,13 @@ div.contentBox {
 
 div.hero {
   width: 100%;
-  padding: 75px 0px;
+  padding: 65px 0px;
   background-color: #fff;
 }
 div.hero ul {
   list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 div.hero ul li {
   display: inline;
@@ -103,6 +105,7 @@ div.footer {
 }
 div.footer ul {
   list-style-type: none;
+  padding: 0px;
 }
 div.footer ul li {
   display: inline;
@@ -119,4 +122,29 @@ p {
 
 .left {
   text-align: left;
+}
+
+@media screen and (max-width: 1020px) and (min-width: 700px) {
+  div.hero ul li a {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.hero {
+      padding: 0px;
+  }
+
+  div.hero ul li {
+    display: block;
+    padding: 10px;
+  }
+
+  div.hero ul li a {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+  }
 }
