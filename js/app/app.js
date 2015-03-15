@@ -21,6 +21,13 @@ App.config(['$routeProvider',
         controller: 'CommCtrl',
         controllerAs: 'comm'
       })
+      .when('/:page', {
+        templateUrl: function (arrs) {
+          return config.partialsPath + arrs.page + '.html';
+        },
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });

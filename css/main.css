@@ -6,6 +6,10 @@ body {
   font-family: Helvetica, arial, sans-serif;
 }
 
+a {
+    color: #333;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
@@ -98,6 +102,33 @@ div.hero ul li a.friend div {
   background-image: url(../images/friend.jpg);
 }
 
+div.slides {
+  
+}
+div.slides ul {
+
+}
+div.slides ul li {
+  margin: 0px;
+}
+div.slides ul li a {
+  border-radius: 0px;
+  overflow: hidden;
+  margin: 10px;
+}
+div.slides ul li a div {
+  position: relative;
+  padding-top: 20px;
+  height: 40px;
+  top: -60px;
+  background-color: #fff;
+  border-radius: 0px;
+}
+div.slides ul li a:hover div {
+  top: 0px;
+  opacity: 0.9;
+}
+
 div.footer {
   width: 100%;
   padding: 15px 0px 5px 0px;
@@ -130,21 +161,35 @@ p {
     width: 200px;
     border-radius: 100px;
   }
+
+  div.slides ul li a {
+    border-radius: 0px;
+  }
+  div.slides ul li a div {
+    top: 0px;
+    opacity: 0.9;
+  }
 }
 
 @media screen and (max-width: 700px) {
   div.hero {
-      padding: 0px;
+    padding: 0px;
   }
-
   div.hero ul li {
     display: block;
     padding: 10px;
   }
-
   div.hero ul li a {
     height: 300px;
     width: 300px;
     border-radius: 150px;
+  }
+
+  div.slides ul li a {
+    border-radius: 0px;
+  }
+  div.slides ul li a div {
+    top: 0px;
+    opacity: 0.9;
   }
 }
