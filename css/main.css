@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #eee;
+  background-color: #fff;
   margin: 0px;
   padding: 0px;
   font-family: Helvetica, arial, sans-serif;
@@ -40,7 +40,7 @@ div.contentBox {
 
 div.hero {
   width: 100%;
-  padding: 65px 0px;
+  padding: 20px 0px;
   background-color: #fff;
 }
 div.hero ul {
@@ -50,24 +50,22 @@ div.hero ul {
 }
 div.hero ul li {
   display: inline;
-  margin: 0px 15px;
+  margin: 0px;
 }
 div.hero ul li a {
   height: 300px;
-  width: 300px;
+  width: 33%;
   background-color: #fff;
   display: inline-block;
   vertical-align: bottom;
   transition: background-color 0.3s ease;
-  border-radius: 150px;
 }
 div.hero ul li a div {
-  border-radius: 150px;
-  width: inherit;
+  width: 100%;
   height: inherit;
   background-size: 100%;
   background-position: center center;
-  opacity: 0.2;
+  opacity: 0.8;
   transition: 0.3s ease;
 }
 div.hero ul li a:hover div {
@@ -159,7 +157,6 @@ p {
   div.hero ul li a {
     height: 200px;
     width: 200px;
-    border-radius: 100px;
   }
 
   div.slides ul li a {
@@ -174,15 +171,22 @@ p {
 @media screen and (max-width: 700px) {
   div.hero {
     padding: 0px;
+    margin-bottom: 10px;
   }
+
   div.hero ul li {
     display: block;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px;
   }
   div.hero ul li a {
     height: 300px;
-    width: 300px;
-    border-radius: 150px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  div.hero ul li a div {
+    border-radius: 0px;
+    opacity: .8;
   }
 
   div.slides ul li a {
