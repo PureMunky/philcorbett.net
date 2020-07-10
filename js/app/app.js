@@ -68,6 +68,12 @@ App.controller('FeedCtrl', ['$scope', function($scope) {
       url: 'https://www.google.com',
       title: 'Google Test',
       description: 'This is where you go to search for lots of things.'
+    },
+    {
+      imgSrc: './images/friend.jpg',
+      url: 'https://www.twitter.com/PhilCorbettLive',
+      title: 'Twitter',
+      description: 'Come follow me!'
     }
   ];
 }]);
