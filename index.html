@@ -5,12 +5,15 @@
   <title>PhilCorbett.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/lib/angular-route.js"></script>
+  <script src="js/app/app.js"></script>
 </head>
 
 <body class="h-card">
-  <h1>
+  <header>
     <a class="p-name u-url" href="http://philcorbett.net" rel="me">Phil Corbett</a>
-  </h1>
+  </header>
   <div class="contentBox">
     <h3>Goal</h3>
     <p class="left">
@@ -40,10 +43,26 @@
             <div></div>
           </a>
         </li>
+        <li>
+          <a href="http://www.twitter.com/PhilCorbettLive" target="_blank" class="friend" title="Friend">
+            <div></div>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
-  <div class="footer">
+
+  <div ng-controller="FeedCtrl" class="contentBox">
+   <div ng-repeat="item in items">
+     <img ng-src="{{item.imgSrc}}" />
+     <div>
+      <a ng-href="{{item.url}}">{{item.title}}</a>
+      <div>{{item.description}}</div>
+     </div>
+   </div>
+  </div>
+
+  <footer>
     <ul>
       <li>
         <a ng-href="#/">
@@ -69,7 +88,7 @@
         <a href="mailto:corbett.phil@gmail.com" class="u-email" rel="me">Email</a>
       </li>
     </ul>
-  </div>
+  </footer>
   <script>
     (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {

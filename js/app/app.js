@@ -60,3 +60,14 @@ App.controller('CommCtrl', ['$scope', '$routeParams', function ($scope, $routePa
     return config.partialsPath + 'comm/words/' + $scope.word + '.html';
   };
 }]);
+
+App.controller('FeedCtrl', ['$scope', function($scope) {
+  $scope.items = [
+    {
+      imgSrc: './images/code.png',
+      url: 'https://www.google.com',
+      title: 'Google Test',
+      description: 'This is where you go to search for lots of things.'
+    }
+  ];
+}]);
