@@ -14,52 +14,27 @@
   <header>
     <a class="p-name u-url" href="http://philcorbett.net" rel="me">Phil Corbett</a>
   </header>
+  <div class="hero">
+    <p class="left lightBox" style="width: 400px; display: inline-block;">
+      I believe that technology is about connecting with people and inspiring them; it is about sharing experiences and
+      sharing knowledge. My goal is to improve my relationships and help others do the same through the use, propagation, and
+      expansion of technology in a way that is smart, tactful, and positive.
+    </p>
+    <img src="./images/friend.jpg" style="display: inline-block; vertical-align: top;" />
+  </div>
   <div class="body">
-    <div class="contentBox">
-      <h2>Goal</h2>
-      <p class="left">
-        I believe that technology is about connecting with people and inspiring them; it is about sharing experiences and
-        sharing knowledge. My goal is to improve my relationships and help others do the same through the use, propagation, and
-        expansion of technology in a way that is smart, tactful, and positive.
-      </p>
-    </div>
-    
-    <!--div>
-      <div class="hero">
-        <ul>
-          <li>
-            <a href="https://github.com/PureMunky" target="_blank" class="coder" title="Coder">
-              <div></div>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.twitch.tv/puremunky" target="_blank" class="gamer" title="Gamer">
-              <div></div>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.twitter.com/PhilCorbettLive" target="_blank" class="friend" title="Friend">
-              <div></div>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.twitter.com/PhilCorbettLive" target="_blank" class="friend" title="Friend">
-              <div></div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div-->
-
     <div ng-controller="FeedCtrl" class="contentBox">
       <h2>What have I been up to?</h2>
-    <div class="contentItem" ng-repeat="item in items">
-      <img ng-src="{{item.imgSrc}}" />
-      <div>
-        <a ng-href="{{item.url}}">{{item.title}}</a>
-        <div>{{item.description}}</div>
-      </div>
-    </div>
+      <a ng-href="{{item.url}}" target="_blank" ng-repeat="item in items">
+        <div class="contentItem">
+          <img ng-src="{{item.imgSrc}}" ng-if="item.imgSrc" />
+          <img ng-src="./images/media/{{item.media}}.png" ng-if="!item.imgSrc" />
+          <div>
+            <div>{{item.title}}</div>
+            <div>{{item.description}}</div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>  
   <footer>

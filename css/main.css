@@ -53,13 +53,31 @@ h1 a {
 
 div.contentBox {
     background-color: #fff;
-    margin-top: 30px;
+    margin: 30px auto;
     text-align: left;
     vertical-align: top;
 }
 
+div.contentBox > a {
+  border: 0px;
+  text-decoration: none;
+}
+
+div.contentBox > a:focus {
+  border: 1px;
+}
+
 div.contentItem {
-  margin: 10px 40px;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #eee;
+  height: 100px;
+  width: 420px;
+}
+
+div.contentItem:hover {
+  background-color: #068;
+  color: #fff;
 }
 
 div.contentItem > img {
@@ -72,96 +90,14 @@ div.contentItem > img {
 div.contentItem > div {
   display: inline-block;
   vertical-align: top;
-  margin: 10px;
+  padding: 10px;
+  width: 280px;
 }
 
 div.hero {
   width: 100%;
   padding: 20px 0px;
-  background-color: #fff;
-}
-div.hero ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-div.hero ul li {
-  display: inline;
-  margin: 0px;
-}
-div.hero ul li a {
-  height: 300px;
-  width: 33%;
-  background-color: #fff;
-  display: inline-block;
-  vertical-align: bottom;
-  transition: background-color 0.3s ease;
-}
-div.hero ul li a div {
-  width: 100%;
-  height: inherit;
-  background-size: 100%;
-  background-position: center center;
-  opacity: 0.8;
-  transition: 0.3s ease;
-}
-div.hero ul li a:hover div {
-  background-size: 120%;
-  opacity: 0.6;
-}
-div.hero ul li a.coder {
-  background-color: #4183c4;
-}
-div.hero ul li a.coder:hover {
-  background-color: #74b6f7;
-}
-div.hero ul li a.coder div {
-  background-image: url(../images/code.png);
-}
-div.hero ul li a.gamer {
-  background-color: #6441a5;
-}
-div.hero ul li a.gamer:hover {
-  background-color: #9774d8;
-}
-div.hero ul li a.gamer div {
-  background-image: url(../images/gamer.jpg);
-}
-div.hero ul li a.friend {
-  background-color: #4099ff;
-}
-div.hero ul li a.friend:hover {
-  background-color: #73ccff;
-}
-div.hero ul li a.friend div {
-  background-image: url(../images/friend.jpg);
-}
-
-div.slides {
-  
-}
-div.slides ul {
-
-}
-div.slides ul li {
-  margin: 0px;
-}
-div.slides ul li a {
-  border-radius: 0px;
-  overflow: hidden;
-  margin: 10px;
-}
-div.slides ul li a div {
-  position: relative;
-  padding-top: 20px;
-  height: 40px;
-  top: -60px;
-  background-color: #fff;
-  border-radius: 0px;
-}
-div.slides ul li a:hover div {
-  top: 0px;
-  opacity: 0.9;
+  background-color: #068;
 }
 
 footer {
@@ -187,12 +123,17 @@ footer ul li img {
 }
 
 p {
-  padding: 15px 50px;
-  margin: 0px;
+  padding: 15px 30px;
+  margin: 0px 15px;
 }
 
 .left {
   text-align: left;
+}
+
+p.lightBox {
+  background-color: #BDD;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1020px) and (min-width: 700px) {
