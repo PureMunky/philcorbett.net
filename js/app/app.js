@@ -60,3 +60,29 @@ App.controller('CommCtrl', ['$scope', '$routeParams', function ($scope, $routePa
     return config.partialsPath + 'comm/words/' + $scope.word + '.html';
   };
 }]);
+
+App.controller('FeedCtrl', ['$scope', function($scope) {
+  $scope.items = [
+    {
+      imgSrc: './images/code.png',
+      url: 'https://github.com/PureMunky',
+      media: 'site',
+      title: 'Github Profile',
+      description: 'I like to tinker around with different technologies, you can check out some of my stuff on Github.'
+    },
+    {
+      imgSrc: './images/friend.jpg',
+      url: 'https://www.twitter.com/PhilCorbettLive',
+      media: 'site',
+      title: 'Twitter',
+      description: "I'm always dumping my social media accounts but I seem to come back to Twitter for one reason or another."
+    },
+    {
+      imgSrc: './images/tete.jpg',
+      url: 'http://tetelearning.com',
+      media: 'site',
+      title: 'Tete Learning',
+      description: "If you're interested in becoming or finding a mentor for something, please reach out."
+    }
+  ];
+}]);

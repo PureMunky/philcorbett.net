@@ -5,45 +5,39 @@
   <title>PhilCorbett.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/lib/angular-route.js"></script>
+  <script src="js/app/app.js"></script>
 </head>
 
 <body class="h-card">
-  <h1>
+  <header>
     <a class="p-name u-url" href="http://philcorbett.net" rel="me">Phil Corbett</a>
-  </h1>
-  <div class="contentBox">
-    <h3>Goal</h3>
-    <p class="left">
+  </header>
+  <div class="hero">
+    <p class="left lightBox" style="width: 400px; display: inline-block;">
       I believe that technology is about connecting with people and inspiring them; it is about sharing experiences and
-      sharing
-      knowledge. My goal is to improve my relationships and help others do the same through the use, propagation, and
-      expansion
-      of technology in a way that is smart, tactful, and positive.
+      sharing knowledge. My goal is to improve my relationships and help others do the same through the use, propagation, and
+      expansion of technology in a way that is smart, tactful, and positive.
     </p>
-  </div>
-  
-  <div>
-    <div class="hero">
-      <ul>
-        <li>
-          <a href="https://github.com/PureMunky" target="_blank" class="coder" title="Coder">
-            <div></div>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.twitch.tv/puremunky" target="_blank" class="gamer" title="Gamer">
-            <div></div>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.twitter.com/PhilCorbettLive" target="_blank" class="friend" title="Friend">
-            <div></div>
-          </a>
-        </li>
-      </ul>
+    <div class="image"></div> 
     </div>
-  </div>
-  <div class="footer">
+  <div class="body">
+    <div ng-controller="FeedCtrl" class="contentBox">
+      <h2>What have I been up to?</h2>
+      <a ng-href="{{item.url}}" target="_blank" ng-repeat="item in items">
+        <div class="contentItem">
+          <img ng-src="{{item.imgSrc}}" ng-if="item.imgSrc" />
+          <img ng-src="./images/media/{{item.media}}.png" ng-if="!item.imgSrc" />
+          <div>
+            <div style="font-weight: bold;">{{item.title}}</div>
+            <div>{{item.description}}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>  
+  <footer>
     <ul>
       <li>
         <a ng-href="#/">
@@ -69,7 +63,7 @@
         <a href="mailto:corbett.phil@gmail.com" class="u-email" rel="me">Email</a>
       </li>
     </ul>
-  </div>
+  </footer>
   <script>
     (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
