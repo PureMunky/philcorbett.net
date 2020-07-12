@@ -75,6 +75,7 @@ div.contentItem {
   height: 100px;
   width: 420px;
   text-align: left;
+  border-radius: 5px;
 }
 
 div.contentItem:hover {
@@ -102,6 +103,13 @@ div.hero {
   background-color: #068;
 }
 
+div.hero > p {
+  display: inline-block;
+  width: 400px;
+  padding: 15px 30px;
+  margin: 15px;
+}
+
 div.hero > div.image {
   display: inline-block;
   vertical-align: top;
@@ -111,6 +119,7 @@ div.hero > div.image {
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 15px;
+  border-radius: 15px;
 }
 
 footer {
@@ -135,11 +144,6 @@ footer ul li img {
     vertical-align: middle;
 }
 
-p {
-  padding: 15px 30px;
-  margin: 15px;
-}
-
 .left {
   text-align: left;
 }
@@ -147,4 +151,43 @@ p {
 p.lightBox {
   background-color: #BDD;
   border-radius: 10px;
+}
+
+@media (max-width: 530px) {
+  div.hero > p {
+    width: auto;
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+
+  div.hero > div.image {
+    width: 95%;
+    height: 300px;
+  }
+
+  div.contentBox {
+    background-color: #fff;
+    margin: 0px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  div.contentItem {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    height: auto;
+    min-height: 50px;
+  }
+
+  div.contentItem > img {
+    display: none;
+  }
+
+  div.contentItem > div {
+    width: auto;
+  }
 }
