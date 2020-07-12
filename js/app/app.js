@@ -68,14 +68,14 @@ App.controller('FeedCtrl', ['$scope', function($scope) {
       url: 'https://github.com/PureMunky',
       media: 'site',
       title: 'Github Profile',
-      description: 'I like to tinker around with differnt technologies, you can check out some of my stuff on Github.'
+      description: 'I like to tinker around with different technologies, you can check out some of my stuff on Github.'
     },
     {
       imgSrc: './images/friend.jpg',
       url: 'https://www.twitter.com/PhilCorbettLive',
       media: 'site',
       title: 'Twitter',
-      description: "I'm always dumping my social media accounts but I always seem to come back to Twitter for some reason."
+      description: "I'm always dumping my social media accounts but I seem to come back to Twitter for one reason or another."
     },
     {
       imgSrc: './images/tete.jpg',
