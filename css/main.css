@@ -98,7 +98,7 @@ div.contentItem > div {
 
 div.hero {
   width: 100%;
-  padding: 20px 0px;
+  padding-bottom: 20px;
   background-color: #068;
 }
 
@@ -110,6 +110,7 @@ div.hero > div.image {
   background-image: url(../images/family.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  margin-top: 15px;
 }
 
 footer {
@@ -136,7 +137,7 @@ footer ul li img {
 
 p {
   padding: 15px 30px;
-  margin: 0px 15px;
+  margin: 15px;
 }
 
 .left {
@@ -146,49 +147,4 @@ p {
 p.lightBox {
   background-color: #BDD;
   border-radius: 10px;
-}
-
-@media screen and (max-width: 1020px) and (min-width: 700px) {
-  div.hero ul li a {
-    height: 200px;
-    width: 200px;
-  }
-
-  div.slides ul li a {
-    border-radius: 0px;
-  }
-  div.slides ul li a div {
-    top: 0px;
-    opacity: 0.9;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  div.hero {
-    padding: 0px;
-    margin-bottom: 10px;
-  }
-
-  div.hero ul li {
-    display: block;
-    padding: 0px;
-    margin: 0px;
-  }
-  div.hero ul li a {
-    height: 300px;
-    width: 100%;
-    border-radius: 0px;
-  }
-  div.hero ul li a div {
-    border-radius: 0px;
-    opacity: .8;
-  }
-
-  div.slides ul li a {
-    border-radius: 0px;
-  }
-  div.slides ul li a div {
-    top: 0px;
-    opacity: 0.9;
-  }
 }
