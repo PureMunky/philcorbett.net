@@ -20,8 +20,8 @@
       sharing knowledge. My goal is to improve my relationships and help others do the same through the use, propagation, and
       expansion of technology in a way that is smart, tactful, and positive.
     </p>
-    <img src="./images/friend.jpg" style="display: inline-block; vertical-align: top;" />
-  </div>
+    <div class="image"></div> 
+    </div>
   <div class="body">
     <div ng-controller="FeedCtrl" class="contentBox">
       <h2>What have I been up to?</h2>
@@ -30,7 +30,7 @@
           <img ng-src="{{item.imgSrc}}" ng-if="item.imgSrc" />
           <img ng-src="./images/media/{{item.media}}.png" ng-if="!item.imgSrc" />
           <div>
-            <div>{{item.title}}</div>
+            <div style="font-weight: bold;">{{item.title}}</div>
             <div>{{item.description}}</div>
           </div>
         </div>

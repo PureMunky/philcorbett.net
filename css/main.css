@@ -100,6 +100,16 @@ div.hero {
   background-color: #068;
 }
 
+div.hero > div.image {
+  display: inline-block;
+  vertical-align: top;
+  height: 350px;
+  width: 500px;
+  background-image: url(../images/family.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 footer {
   width: 100%;
   padding: 15px 0px 5px 0px;

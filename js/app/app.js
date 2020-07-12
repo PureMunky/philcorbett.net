@@ -65,23 +65,24 @@ App.controller('FeedCtrl', ['$scope', function($scope) {
   $scope.items = [
     {
       imgSrc: './images/code.png',
-      url: 'https://www.google.com',
+      url: 'https://github.com/PureMunky',
       media: 'site',
-      title: 'Google Test',
-      description: 'This is where you go to search for lots of things.'
+      title: 'Github Profile',
+      description: 'I like to tinker around with differnt technologies, you can check out some of my stuff on Github.'
     },
     {
       imgSrc: './images/friend.jpg',
       url: 'https://www.twitter.com/PhilCorbettLive',
       media: 'site',
       title: 'Twitter',
-      description: 'Come follow me!'
+      description: "I'm always dumping my social media accounts but I always seem to come back to Twitter for some reason."
     },
     {
-      url: 'https://www.twitter.com/PhilCorbettLive',
-      media: 'code',
-      title: 'Twitter',
-      description: "I want to write a really long description to make sure that it overflows correctly and isn't terrible to look at!"
+      imgSrc: './images/tete.jpg',
+      url: 'http://tetelearning.com',
+      media: 'site',
+      title: 'Tete Learning',
+      description: "If you're interested in becoming or finding a mentor for something, please reach out."
     }
   ];
 }]);
