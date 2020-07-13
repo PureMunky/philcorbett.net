@@ -68,11 +68,11 @@ App.controller('FeedCtrl', ['$scope', function ($scope) {
       title: 'Tete Learning',
       description: "If you're interested in becoming or finding a mentor for something, please reach out."
     },
-    {
-      url: './blog/2020/06/03.enough.excuses.html',
-      media: 'blog',
-      title: 'Enough Excuses',
-      description: "Keeping ahead of your future self inclues eliminating reasons he doesn't want to do something."
-    }
+    // {
+    //   url: './blog/2020/06/03.enough.excuses.html',
+    //   media: 'blog',
+    //   title: 'Enough Excuses',
+    //   description: "Keeping ahead of your future self inclues eliminating reasons he doesn't want to do something."
+    // }
   ];
 }]);
