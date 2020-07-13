@@ -7,7 +7,7 @@ var App = angular.module('App', ['ngRoute']),
   };
 
 App.config(['$routeProvider',
-  function($routeProvider) {
+  function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: config.partialsPath + 'home.html',
@@ -38,30 +38,14 @@ App.controller('MainCtrl', ['$scope', function ($scope) {
   $scope.name = 'Main';
 }]);
 
-App.controller('CommCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
-  $scope.word = $routeParams.commId;
-  $scope.lastWord = persist.lastWord;
-  persist.lastWord = $scope.word;
-
-  var specialWords = {
-    whatisthis: {
-      name: 'What is this?'
-    }
-  };
-
-  if (specialWords[$scope.word] !== undefined) {
-    $scope.name = specialWords[$scope.word].name;
-  } else {
-    $scope.name = $scope.word.substr(0, 1).toUpperCase() + $scope.word.substr(1).toLowerCase();
-  }
-
-
-  $scope.getPage = function () {
-    return config.partialsPath + 'comm/words/' + $scope.word + '.html';
+App.directive('appFooter', [function () {
+  return {
+    restrict: 'E',
+    template: '<footer> <ul> <li> <a ng-href="#/"> <img src="http://philcorbett.net/images/profile.jpg" class="u-photo" style="height: 50px; width: 50px;" /> </a> </li> <li> <a target="_blank" href="http://www.twitter.com/PhilCorbettLive" rel="me">Twitter</a> </li> <li> <a target="_blank" href="https://soundcloud.com/phil-corbett" rel="me">SoundCloud</a> </li> <li> <a target="_blank" href="https://blog.philcorbett.net" rel="me">Blog</a> </li> <li> <a target="_blank" href="http://github.com/PureMunky" rel="me">Github</a> </li> <li> <a target="_blank" href="https://www.paypal.me/philcorbettlive" rel="me">PayPal</a> </li> <li> <a href="mailto:corbett.phil@gmail.com" class="u-email" rel="me">Email</a> </li> </ul> </footer>'
   };
 }]);
 
-App.controller('FeedCtrl', ['$scope', function($scope) {
+App.controller('FeedCtrl', ['$scope', function ($scope) {
   $scope.items = [
     {
       imgSrc: './images/code.png',
@@ -83,6 +67,12 @@ App.controller('FeedCtrl', ['$scope', function($scope) {
       media: 'site',
       title: 'Tete Learning',
       description: "If you're interested in becoming or finding a mentor for something, please reach out."
+    },
+    {
+      url: './blog/2020/06/03.enough.excuses.html',
+      media: 'blog',
+      title: 'Enough Excuses',
+      description: "Keeping ahead of your future self inclues eliminating reasons he doesn't want to do something."
     }
   ];
 }]);

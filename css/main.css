@@ -11,6 +11,15 @@ body {
   text-align: center;
 }
 
+.blog {
+  text-align: left;
+  margin: 40px;
+}
+
+.blog > p {
+  line-height: 1.5em;
+}
+
 header {
   color: #fff;
   text-align: left;
@@ -29,7 +38,8 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
+  margin: 0px;
+  padding: auto 0px;
 }
 
 h1 {

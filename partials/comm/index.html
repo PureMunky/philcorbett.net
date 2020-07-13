@@ -1,6 +1,0 @@
-<div class="hero">
-  <h3>{{name}}</h3>
-  <p class="left" ng-include="getPage()"></p>
-  <p class="left" ng-hide="word == 'whatisthis'"><a ng-href="#/_/whatisthis">What is this?</a></p>
-  <p class="left" ng-show="lastWord !== undefined && lastWord !== 'whatisthis' && word === 'whatisthis'"><a ng-href="#/_/{{lastWord}}">Go back to {{lastWord}}.</a></p>
-</div>
