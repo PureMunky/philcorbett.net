@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="App">
+<html ng-app="App" lang="en">
 
 <head>
   <title>PhilCorbett.net</title>
@@ -28,8 +28,8 @@
       <h2>What have I been up to?</h2>
       <a ng-href="{{item.url}}" ng-repeat="item in items">
         <div class="contentItem">
-          <img ng-src="{{item.imgSrc}}" ng-if="item.imgSrc" />
-          <img ng-src="./images/media/{{item.media}}.png" ng-if="!item.imgSrc" />
+          <img ng-src="{{item.imgSrc}}" ng-if="item.imgSrc" alt="{{item.title}}" />
+          <img ng-src="./images/media/{{item.media}}.png" ng-if="!item.imgSrc" alt="{{tiem.title}}" />
           <div>
             <div style="font-weight: bold;">{{item.title}}</div>
             <div>{{item.description}}</div>
