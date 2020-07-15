@@ -48,6 +48,13 @@ App.directive('appFooter', [function () {
 App.controller('FeedCtrl', ['$scope', function ($scope) {
   $scope.items = [
     {
+      imgSrc: './images/sounding-board.jpg',
+      url: './pages/sounding-board.html',
+      media: 'site',
+      title: 'Sounding Board',
+      description: 'Are you looking for someone to offer an impartial opinion about anything? Let me know!'
+    },
+    {
       imgSrc: './images/code.png',
       url: './pages/github.html',
       media: 'site',
