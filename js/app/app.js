@@ -41,7 +41,7 @@ App.controller('MainCtrl', ['$scope', function ($scope) {
 App.directive('appFooter', [function () {
   return {
     restrict: 'E',
-    template: '<footer> <ul> <li> <a ng-href="#/"> <img src="https://www.philcorbett.net/images/profile.jpg" class="u-photo" style="height: 50px; width: 50px;" /> </a> </li> <li> <a target="_blank" href="http://www.twitter.com/PhilCorbettLive" rel="me">Twitter</a> </li> <li> <a target="_blank" href="https://soundcloud.com/phil-corbett" rel="me">SoundCloud</a> </li> <li> <a target="_blank" href="https://blog.philcorbett.net" rel="me">Blog</a> </li> <li> <a target="_blank" href="http://github.com/PureMunky" rel="me">Github</a> </li> <li> <a target="_blank" href="https://www.paypal.me/philcorbettlive" rel="me">PayPal</a> </li> <li> <a href="./pages/contact.html">Contact</a> </li> </ul> </footer>'
+    template: '<footer> <ul> <li> <a ng-href="#/"><img src="https://www.philcorbett.net/images/profile.jpg" class="u-photo" style="height: 50px; width: 50px;" /></a> </li><li><a target="_blank" href="https://drive.google.com/drive/folders/1c2BigmZC8YfnrSy5Xalbdj9of05jPcvO?usp=sharing" rel="me">Public Folder</a></li><li> <a target="_blank" href="http://www.twitter.com/PhilCorbettLive" rel="me">Twitter</a> </li> <li> <a target="_blank" href="https://soundcloud.com/phil-corbett" rel="me">SoundCloud</a> </li> <li> <a target="_blank" href="https://blog.philcorbett.net" rel="me">Blog</a> </li> <li> <a target="_blank" href="http://github.com/PureMunky" rel="me">Github</a> </li> <li> <a target="_blank" href="https://www.paypal.me/philcorbettlive" rel="me">PayPal</a> </li> <li> <a href="./pages/contact.html">Contact</a> </li> </ul> </footer>'
   };
 }]);
 
