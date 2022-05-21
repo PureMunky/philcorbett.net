@@ -166,6 +166,13 @@ p.lightBox {
   border-radius: 10px;
 }
 
+p.microItem {
+  border-left: 3px solid #068;
+  margin: 10px;
+  padding-left: 5px;
+  text-align: left;
+}
+
 @media (max-width: 530px) {
   div.hero > p {
     width: auto;

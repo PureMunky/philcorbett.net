@@ -37,6 +37,12 @@
         </div>
       </a>
     </div>
+    <div ng-controller="MicroCtrl" class="contentBox">
+      <h2>Micro Feed</h2>
+      <p class="microItem" ng-repeat="item in items">
+        {{item}}
+      </p>
+    </div>
   </div>
   <app-footer></app-footer>
   <script>

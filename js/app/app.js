@@ -83,3 +83,10 @@ App.controller('FeedCtrl', ['$scope', function ($scope) {
     // }
   ];
 }]);
+
+App.controller('MicroCtrl', ['$scope', function ($scope) {
+  $scope.items = [
+    "I don't really have anything to say here so maybe this wasn't the best use of my time.",
+    'I\'m making my own Twitter, right here because I\'m tired of the real Twitter. Sorry, you can\'t use my Twitter.'
+  ]
+}]);
