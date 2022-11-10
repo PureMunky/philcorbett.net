@@ -41,7 +41,7 @@ App.controller('MainCtrl', ['$scope', function ($scope) {
 App.directive('appFooter', [function () {
   return {
     restrict: 'E',
-    template: '<footer> <ul> <li> <a ng-href="#/"><img src="https://www.philcorbett.net/images/profile.jpg" class="u-photo" style="height: 50px; width: 50px;" /></a> </li><li><a target="_blank" href="https://drive.google.com/drive/folders/1c2BigmZC8YfnrSy5Xalbdj9of05jPcvO?usp=sharing" rel="me">Public Folder</a></li> <li> <a target="_blank" href="https://blog.philcorbett.net" rel="me">Blog</a> </li> <li> <a target="_blank" href="http://github.com/PureMunky" rel="me">Github</a> </li> <li> <a target="_blank" href="https://www.paypal.me/philcorbettlive" rel="me">PayPal</a> </li> <li> <a href="./pages/contact.html">Contact</a> </li> </ul> </footer>'
+    template: '<footer> <ul> <li> <a ng-href="#/"><img src="https://www.philcorbett.net/images/profile.jpg" class="u-photo" style="height: 50px; width: 50px;" /></a> </li><li><a target="_blank" href="https://drive.google.com/drive/folders/1c2BigmZC8YfnrSy5Xalbdj9of05jPcvO?usp=sharing" rel="me">Public Folder</a></li> <li> <a target="_blank" href="https://blog.philcorbett.net" rel="me">Blog</a> </li> <li> <a rel="me" href="https://indieweb.social/@PhilCorbettLive">Mastodon</a></li> <li> <a target="_blank" href="http://github.com/PureMunky" rel="me">Github</a> </li> <li> <a target="_blank" href="https://www.paypal.me/philcorbettlive" rel="me">PayPal</a> </li> <li> <a href="./pages/contact.html">Contact</a> </li> </ul> </footer>'
   };
 }]);
 
@@ -86,7 +86,6 @@ App.controller('FeedCtrl', ['$scope', function ($scope) {
 
 App.controller('MicroCtrl', ['$scope', function ($scope) {
   $scope.items = [
-    "I don't really have anything to say here so maybe this wasn't the best use of my time.",
-    'I\'m making my own Twitter, right here because I\'m tired of the real Twitter. Sorry, you can\'t use my Twitter.'
+    "I just created a Mastodon account so go check that out! Link is in the footer."
   ]
 }]);
