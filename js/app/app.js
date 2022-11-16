@@ -86,6 +86,5 @@ App.controller('FeedCtrl', ['$scope', function ($scope) {
 
 App.controller('MicroCtrl', ['$scope', function ($scope) {
   $scope.items = [
-    "I just created a Mastodon account so go check that out! Link is in the footer."
   ]
 }]);
