@@ -11,15 +11,6 @@ body {
   text-align: center;
 }
 
-.blog {
-  text-align: left;
-  margin: 40px;
-}
-
-.blog > p {
-  line-height: 1.5em;
-}
-
 header {
   color: #fff;
   text-align: left;
@@ -28,7 +19,7 @@ header {
   font-size: 2em;
 }
 
-header > a {
+header>a {
   color: #fff;
   text-decoration: none;
 }
@@ -37,7 +28,12 @@ a {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
   padding: auto 0px;
 }
@@ -46,85 +42,42 @@ h1 {
   padding: 45px 45px 20px 45px;
   margin: 0px;
 }
+
 h2 {
-    margin: 0px auto 15px;
+  margin: 0px auto 15px;
 }
+
 h3 {
   padding: 0px 45px;
   text-align: left;
 }
+
 h4 {
   margin: 10px 0px 20px 0px;
 }
 
 h1 a {
-    color: #000;
-    text-decoration: none;
-}
-
-div.contentBox {
-    background-color: #fff;
-    margin: 30px auto;
-    text-align: center;
-    vertical-align: top;
-}
-
-div.contentBox > a {
-  border: 0px;
+  color: #000;
   text-decoration: none;
-}
-
-div.contentBox > a:focus {
-  border: 1px;
-}
-
-div.contentItem {
-  display: inline-block;
-  margin: 10px;
-  border: 1px solid #eee;
-  height: 100px;
-  width: 420px;
-  text-align: left;
-  border-radius: 5px;
-}
-
-div.contentItem:hover {
-  background-color: #068;
-  color: #fff;
-}
-
-div.contentItem > img {
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-div.contentItem > div {
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px;
-  width: 280px;
 }
 
 div.hero {
   width: 100%;
   padding-bottom: 20px;
-  background-color: #068;
+  /* background-color: #068; */
 }
 
-div.hero > p {
+div.hero>div {
   display: inline-block;
-  width: 400px;
+  height: 650px;
+  width: 500px;
   padding: 15px 30px;
   margin: 15px;
 }
 
-div.hero > div.image {
+div.hero>div.image {
   display: inline-block;
   vertical-align: top;
-  height: 350px;
-  width: 500px;
   background-image: url(../images/family.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -149,32 +102,27 @@ footer ul {
   list-style-type: none;
   padding: 0px;
 }
+
 footer ul li {
   display: inline;
 }
+
 footer ul li img {
-    border-radius: 25px;
-    vertical-align: middle;
+  border-radius: 25px;
+  vertical-align: middle;
 }
 
 .left {
   text-align: left;
 }
 
-p.lightBox {
+.lightBox {
   background-color: #BDD;
   border-radius: 10px;
 }
 
-p.microItem {
-  border-left: 3px solid #068;
-  margin: 10px;
-  padding-left: 5px;
-  text-align: left;
-}
-
 @media (max-width: 530px) {
-  div.hero > p {
+  div.hero>p {
     width: auto;
     display: inline-block;
     margin: 15px;
@@ -183,31 +131,9 @@ p.microItem {
     box-sizing: border-box;
   }
 
-  div.hero > div.image {
+  div.hero>div.image {
     width: 95%;
     height: 300px;
   }
 
-  div.contentBox {
-    background-color: #fff;
-    margin: 0px;
-    text-align: center;
-    vertical-align: top;
-  }
-
-  div.contentItem {
-    display: inline-block;
-    text-align: left;
-    width: auto;
-    height: auto;
-    min-height: 50px;
-  }
-
-  div.contentItem > img {
-    display: none;
-  }
-
-  div.contentItem > div {
-    width: auto;
-  }
 }
