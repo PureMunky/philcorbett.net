@@ -61,6 +61,10 @@ h1 a {
   text-decoration: none;
 }
 
+p {
+  margin-block-start: 0px;
+}
+
 div.hero {
   width: 100%;
   padding-bottom: 20px;
@@ -69,14 +73,13 @@ div.hero {
 
 div.hero>div {
   display: inline-block;
-  height: 650px;
   width: 500px;
-  padding: 15px 30px;
   margin: 15px;
 }
 
 div.hero>div.image {
   display: inline-block;
+  height: 650px;
   vertical-align: top;
   background-image: url(../images/family.jpg);
   background-size: 100%;
