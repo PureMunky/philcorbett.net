@@ -1,21 +1,100 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0px;
-  padding: 0px;
+/* ─── Blog Layout ─── */
+
+.blog-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
 }
 
-div.blog {
-  margin: 20px;
-  padding: 0px;
-  max-width: 800px;
-  text-align: left;
+.blog-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
 }
 
-div.blog>p {
-  margin-block-start: 20px;
-  padding: 0px;
+.blog-content .date {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.blog-content a.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* ─── Blog Index ─── */
+
+.blog-content .welcome {
+  margin-bottom: 2.5rem;
+}
+
+.blog-content .welcome p {
+  color: var(--text-light);
+}
+
+.post-list {
+  list-style: none;
+}
+
+.post-list li {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-list li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.post-list h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.post-list h2 a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.post-list h2 a:hover {
+  color: var(--accent);
+}
+
+.post-list .post-date {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.post-list .post-summary {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 768px) {
+  .blog-content {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .blog-content h1 {
+    font-size: 1.75rem;
+  }
 }
