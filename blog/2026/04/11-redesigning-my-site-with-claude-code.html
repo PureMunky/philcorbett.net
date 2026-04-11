@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Redesigning My Site with Claude Code - Phil Corbett</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../../../css/blog.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">Phil Corbett</a>
+      <div class="nav-links">
+        <a href="../../../blog/index.html">Blog</a>
+        <a href="../../../pages/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="blog-content">
+      <h1>Redesigning My Site with Claude Code</h1>
+      <span class="date">April 11, 2026</span>
+
+      <p>
+        I've been meaning to clean up this website for a while. It worked, it said what I wanted it to
+        say, but it looked like something I threw together in an afternoon, because that's exactly what
+        it was. The dark gray header and footer, the basic layout, the inconsistent styling across
+        pages. It was functional but it wasn't something I was excited to share.
+      </p>
+
+      <p>
+        Rather than spending a weekend tweaking CSS and second-guessing color choices, I decided to try
+        something different. I used Claude Code, Anthropic's CLI tool for working with Claude directly
+        in the terminal, to redesign the entire site in a single session.
+      </p>
+
+      <p>
+        The experience was genuinely interesting. I started with a simple prompt: make the site look
+        cleaner and more professional. Claude explored the full codebase first, reading every HTML and
+        CSS file to understand the current structure before proposing any changes. It then rewrote the
+        CSS from scratch with a modern approach: CSS custom properties for theming, a system font stack,
+        flexbox layouts, and proper responsive breakpoints. It restructured the HTML across every page
+        to use semantic elements like nav, main, and section, and added a consistent header with
+        navigation across the site.
+      </p>
+
+      <p>
+        What struck me was how iterative the process felt. It wasn't just a one-shot generation of
+        code. I could ask for changes, like removing the scheduling link, and Claude understood the
+        context of what had already been done. It found every instance across multiple files and
+        removed them cleanly. When merge conflicts came up with the production branch, it resolved
+        those too. It even took a screenshot of the result using a headless browser so I could see
+        what the page looked like without leaving the terminal.
+      </p>
+
+      <p>
+        The whole thing, from the initial redesign to conflict resolution to creating the pull request
+        with a screenshot attached, happened in one continuous conversation. That's the part that
+        surprised me most. It wasn't just writing code. It was navigating git branches, understanding
+        file relationships, managing state across multiple changes, and interacting with GitHub. It
+        felt less like using a tool and more like pair programming with someone who happens to be
+        very fast at CSS.
+      </p>
+
+      <p>
+        I want to be honest about this because it connects back to something I wrote about in my first
+        post: authenticity. I didn't hand-craft every pixel of this redesign. An AI did the heavy
+        lifting. But the decisions were mine. I chose the direction, I reviewed the output, I asked for
+        adjustments. The end result is something that actually represents what I wanted the site to feel
+        like: clean, simple, professional, without being over-engineered. Which, ironically, is a lot
+        like how I think about engineering leadership.
+      </p>
+
+      <p>
+        If you're curious about Claude Code, it's worth trying. Especially if you're the kind of person
+        who has a side project sitting around that just needs a push to get to the next level. Sometimes
+        the best way to ship something is to have a really fast collaborator.
+      </p>
+
+      <a class="back-link" href="../../index.html">&larr; Return to Blog</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/phil-corbett-live/" target="_blank">LinkedIn</a>
+      <a href="https://bsky.app/profile/philcorbett.net" target="_blank">BlueSky</a>
+      <a href="https://github.com/PureMunky" target="_blank" rel="me">GitHub</a>
+      <a href="https://www.paypal.me/philcorbettlive" target="_blank" rel="me">PayPal</a>
+    </div>
+    <p class="copyright">&copy; Phil Corbett</p>
+  </footer>
+</body>
+
+</html>
