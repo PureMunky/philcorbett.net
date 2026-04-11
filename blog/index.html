@@ -2,33 +2,49 @@
 <html lang="en">
 
 <head>
-  <title>Phil Corbett</title>
+  <title>Blog - Phil Corbett</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../../../css/main.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="../../../css/blog.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../css/blog.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
 <body>
   <header>
-    <a href="https://philcorbett.net">Phil Corbett</a>
+    <nav>
+      <a class="logo" href="/">Phil Corbett</a>
+      <div class="nav-links">
+        <a href="../blog/index.html">Blog</a>
+        <a href="../pages/contact.html">Contact</a>
+      </div>
+    </nav>
   </header>
 
-  <div class="blog">
-    <h1>Welcome</h1>
-    <p>Here's where I write about random things. Check out the list below.</p>
+  <main>
+    <div class="blog-content">
+      <h1>Blog</h1>
+      <div class="welcome">
+        <p>Here's where I write about random things. Check out the list below.</p>
+      </div>
 
-    <h2><a href="2025/04/25-getting-started.html">Getting Started</a></h2>
-    <p>April 25th, 2025: Short post explaining why I set up this blog.</p>
-  </div>
+      <ul class="post-list">
+        <li>
+          <h2><a href="2025/04/25-getting-started.html">Getting Started</a></h2>
+          <span class="post-date">April 25, 2025</span>
+          <p class="post-summary">Short post explaining why I set up this blog.</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/phil-corbett-live/" target="_blank">LinkedIn</a>
+      <a href="https://bsky.app/profile/philcorbett.net" target="_blank">BlueSky</a>
+      <a href="https://github.com/PureMunky" target="_blank" rel="me">GitHub</a>
+      <a href="https://www.paypal.me/philcorbettlive" target="_blank" rel="me">PayPal</a>
+    </div>
+    <p class="copyright">&copy; Phil Corbett</p>
+  </footer>
 </body>
-
-<footer>
-  <ul>
-    <li><a target="_blank" href="https://www.linkedin.com/in/phil-corbett-live/">LinkedIn</a></li>
-    <li><a target="_blank" href="https://bsky.app/profile/philcorbett.net">BlueSky</a></li>
-    <li><a target="_blank" href="http://github.com/PureMunky" rel="me">Github</a></li>
-    <li><a target="_blank" href="https://www.paypal.me/philcorbettlive" rel="me">PayPal</a></li>
-  </ul>
-</footer>
 
 </html>
