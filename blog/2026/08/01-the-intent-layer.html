@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Intent Layer - Phil Corbett</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../../../css/blog.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">Phil Corbett</a>
+      <div class="nav-links">
+        <a href="../../../blog/index.html">Blog</a>
+        <a href="../../../pages/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="blog-content">
+      <h1>The Intent Layer</h1>
+      <span class="date">August 1, 2026</span>
+
+      <p>
+        A few months ago I redesigned this website from my phone, on the couch, by describing what I
+        wanted and letting Claude Code do the typing. I wrote about it at the time because the thing
+        that struck me wasn't the output. It was that the work stopped being in my way. I've kept
+        chewing on that feeling ever since, and I think it points at something bigger than one
+        afternoon of CSS. I've started calling it the intent layer, and I want to write it down while
+        it's still rough so I can figure out what it actually is with other people rather than alone
+        in my own head.
+      </p>
+
+      <p>
+        Here's the short version. For most of the history of building software, the part that ate the
+        time wasn't deciding what you wanted. It was translating what you wanted into something a
+        machine would accept. You had an idea, and then you spent hours, days, weeks converting that
+        idea into syntax the computer wouldn't reject. Because that translation is where the hours
+        went, we mistook it for the hard part. We called it "engineering" and treated it as the whole
+        of the work. But slow and hard were never the same thing. The typing was slow. The genuinely
+        hard part was figuring out what to build in the first place, and getting people to actually
+        agree on it. That was true long before any machine started writing the code for us.
+      </p>
+
+      <p>
+        What's shifting now is that the translation is getting cheap. Not free, not perfect, but cheap
+        enough that it's no longer the bottleneck. And when you remove the bottleneck, the thing left
+        standing is the part we always undervalued: knowing what you actually want, and being able to
+        say it clearly. That's the intent layer. It's the interface between a human's intention and
+        the thing that gets built, and I think it's quietly becoming the most important place a person
+        can stand.
+      </p>
+
+      <p>
+        But the couch and the website are just where I noticed it. The conviction underneath comes
+        from somewhere less comfortable: years of building software at large scale, where the code was
+        never the hard part. The hard part was getting many people to want the same thing, in the same
+        direction, at the same time. Most of what I've watched go wrong on big systems wasn't a
+        technical failure. It was a failure of shared intent. People executing brilliantly against
+        subtly different pictures of the goal, and no one noticing until the pieces didn't fit. So
+        when I talk about an intent layer, I'm not really talking about one person describing what
+        they want to a machine. I'm talking about whether many people, and increasingly many machines
+        acting on their behalf, can hold a shared intent well enough to build something large without
+        it quietly pulling apart.
+      </p>
+
+      <p>
+        That reframes the whole thing from a claim into a question, and it's the question I most
+        want help with: is a system that deliberately manages intent at large scale even reasonable,
+        and is it desirable? Reasonable, meaning can you actually capture and keep something as slippery
+        as intent across hundreds of people without it curdling into process for its own sake.
+        Desirable, meaning even if you could, should you, or does something important die when you try
+        to make intent explicit and legible to a system. I lean toward yes on both, but I hold it
+        loosely, and I'd rather argue it out than assume it.
+      </p>
+
+      <h2>What I mean by intent</h2>
+
+      <p>
+        I don't mean prompting, exactly, although prompting is part of it. Prompting is a technique.
+        Intent is the thing underneath the technique. When I redesigned the site, the sentences I
+        typed weren't the valuable part. The valuable part was that I knew what "cleaner" meant to me,
+        I could tell when something came back wrong, and I was willing to push back until it matched
+        the picture in my head. The typing was incidental. The judgment was the work.
+      </p>
+
+      <p>
+        So when I say intent layer, I mean the whole stack of human things that sit above execution.
+        Knowing what problem is actually worth solving. Being able to describe the outcome you want
+        without hand-waving. Recognizing a wrong answer when you see one. Holding a standard and
+        refusing to ship below it. Deciding what not to build. None of that got automated. If
+        anything, it got more exposed, because it used to be hidden underneath weeks of translation
+        work and now it's most of what's left. And every one of those things gets harder the moment
+        more than one person is involved. A single mind holds a coherent intent almost by default; a
+        group has to build one on purpose and keep rebuilding it, because everyone shows up with their
+        own version and drift is the natural state. That's the part I actually care about, and it's
+        why I keep landing on the word <em>shared</em>.
+      </p>
+
+      <h2>Why I think this matters</h2>
+
+      <p>
+        There's a version of the current moment that says the machines are doing the thinking now and
+        humans are being pushed out. I don't believe that, and not for sentimental reasons. I believe
+        the opposite is happening. The machines are doing the translating. The thinking, the wanting,
+        the deciding, that's being pushed <em>toward</em> us, not away from us. The intent layer is
+        getting bigger, not smaller, and most of us aren't trained for it because we spent our careers
+        being rewarded for the translation instead.
+      </p>
+
+      <p>
+        That's the part I find genuinely interesting and a little uncomfortable. A lot of what made
+        someone a strong engineer was fluency in the translation. You knew the language, the
+        framework, the incantations. That fluency mattered enormously and it's not worthless now, but
+        it's no longer the scarce thing. The scarce thing is clarity of intent. And clarity of intent
+        is much harder to fake. You can't bluff your way through knowing what you actually want. Either
+        you have a clear picture and can articulate it and can tell when reality diverges from it, or
+        you don't. And clarity in a single head is only the easy version. Shared clarity is the hard
+        one: a picture aligned closely enough across a whole team that their separate decisions still
+        add up to one coherent thing. That's what actually gates what a large group can build, and
+        it's the thing the new tools help with least.
+      </p>
+
+      <p>
+        This connects to something I keep coming back to in almost everything I write and how I try to
+        lead: authenticity. The intent layer is, in a way, an authenticity layer. It's the part of the
+        work that has to come from an actual human with an actual point of view. You can automate the
+        production of a thing. You can't automate having a reason for it to exist or a taste for
+        whether it's any good.
+      </p>
+
+      <h2>What this changes about how we work</h2>
+
+      <p>
+        If the intent layer is real, then a lot of habits are worth re-examining. We've optimized
+        teams, tools, and careers around making translation faster. Faster typing, faster frameworks,
+        faster onboarding into a codebase. That was the right optimization for a long time. But if
+        translation is no longer the constraint, then speeding it up further has diminishing returns.
+        The leverage moves to helping people get clearer about what they want, getting a group to
+        converge on the same what, and making everyone better at judging what comes back.
+      </p>
+
+      <p>
+        For engineering leadership specifically, I think this is enormous and mostly unspoken. So much
+        of the manager's job has been about removing friction from execution. Unblocking people,
+        smoothing process, protecting focus time. That still matters. But there's a growing part of
+        the job that's about cultivating intent: helping a team articulate why something is worth
+        doing, developing the collective taste to know when a result is good, building the confidence
+        to reject a wrong answer even when it was generated in three seconds and looks convincing.
+        I don't have this figured out. I'm naming it because I think it's about to be a much larger
+        share of the work than we're admitting.
+      </p>
+
+      <h2>Where I'm unsure</h2>
+
+      <p>
+        I want to be honest about the holes, because the whole point of writing this down is to fix
+        them with other people. I'm not sure "layer" is even the right word. It might be a skill, or a
+        posture, or a role. I don't know where the intent layer ends and plain old judgment begins,
+        or whether that distinction matters. I don't know how you teach it, or whether it can be
+        taught or only developed. I don't know what it does to people who were great at the
+        translation and built their identity there. And I'm wary of the failure mode where "just
+        express your intent clearly" becomes a lazy excuse for not understanding anything underneath,
+        because I don't actually believe you can have good intent about a thing you refuse to
+        understand at all.
+      </p>
+
+      <p>
+        And the scale question cuts both ways. A single person on a couch expressing intent to a
+        machine is the easy case, and it's the one I can personally vouch for. Shared intent across a
+        large org is the hard case, the one I care about most, and the one I have scars from but no
+        clean answer to. It's entirely possible that the intent layer is a lovely idea at the scale of
+        one and gets exponentially harder, maybe intractable, as you add people. That's exactly the
+        edge I want to test, not paper over.
+      </p>
+
+      <h2>An invitation</h2>
+
+      <p>
+        This is a first attempt at putting words to something I've only felt so far. In the spirit of
+        this blog, I'm treating it as a line in the sand: this is what I think as of today, and I fully
+        expect to think something more refined a year from now, hopefully because people poked holes in
+        it. If this resonates, or if you think I've got it backwards, I'd love to hear it. Tell me
+        where it breaks. Tell me where you've seen it work. That's how a rough idea becomes a useful
+        one. You can find me through any of the links below.
+      </p>
+
+      <a class="back-link" href="../../index.html">&larr; Return to Blog</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/phil-corbett-live/" target="_blank">LinkedIn</a>
+      <a href="https://bsky.app/profile/philcorbett.net" target="_blank">BlueSky</a>
+      <a href="https://github.com/PureMunky" target="_blank" rel="me">GitHub</a>
+      <a href="https://www.paypal.me/philcorbettlive" target="_blank" rel="me">PayPal</a>
+    </div>
+    <p class="copyright">&copy; Phil Corbett</p>
+  </footer>
+</body>
+
+</html>
