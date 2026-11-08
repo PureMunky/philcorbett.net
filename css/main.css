@@ -280,6 +280,76 @@ footer {
   color: var(--accent);
 }
 
+/* ─── Projects ─── */
+
+.projects-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+.projects-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.projects-content .intro,
+.projects-content .more {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.projects-content .more {
+  margin: 2.5rem 0 0;
+  color: var(--text-light);
+}
+
+.project-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.project-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.project-card p {
+  flex: 1;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.project-links a {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
 /* ─── Responsive ─── */
 
 @media (max-width: 768px) {
@@ -318,6 +388,14 @@ footer {
 
   .cta {
     padding: 3rem 1.5rem;
+  }
+
+  .projects-content {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
   }
 }
 
